@@ -127,7 +127,7 @@ footer p {
     padding: 10px;
 }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-device-width: 412commitpx) {
     #flexcontainer {
         flex-direction: column;
     }
