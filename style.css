@@ -127,16 +127,27 @@ footer p {
     padding: 10px;
 }
 
-@media screen and (max-device-width: 412commitpx) {
+@media screen and (max-device-width: 412px) {
     #flexcontainer {
         flex-direction: column;
-    }
-    #topheader {
-        display: block;
+        width: 100%;
     }
     #welcometext {
-        margin: 0;
         text-align: center;
-        font-size: 10px;
+        font-size: 1.5em;
+        width: 100%;
+    }
+    .bitcoin img {
+        transform: translateX(-13%);
+        width: 300px;
+    }
+    .ethereum {
+        margin-left: 20px;
+    }
+    .coveraside {
+        margin: 20px;
+    }
+    .coveraside img {
+        transform: translateX(45%);
     }
 }
