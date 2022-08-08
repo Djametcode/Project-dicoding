@@ -126,16 +126,27 @@ footer {
 footer p {
     padding: 10px;
 }
+#responsivenav {
+    
+}
 
 @media screen and (max-device-width: 412px) {
     #flexcontainer {
         flex-direction: column;
         width: 100%;
     }
+    #navigasi {
+        display: inline-block;
+        position: sticky;
+        top: 0;
+    }
+    #navigasi li {
+        margin: 0;
+        padding: 0;
+    }
     #welcometext {
         text-align: center;
         font-size: 1.5em;
-        width: 100%;
     }
     .bitcoin img {
         transform: translateX(-13%);
@@ -146,8 +157,5 @@ footer p {
     }
     .coveraside {
         margin: 20px;
+        display: none;
     }
-    .coveraside img {
-        transform: translateX(45%);
-    }
-}
