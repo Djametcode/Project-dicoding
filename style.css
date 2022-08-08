@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    background-color: #323232;
+}
+/* Bagian header */
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+#topheader {
+    position: sticky;
+    top: 0;
+    background-color: #393E46;
+    z-index: 1;
+    color: #EEEEEE;
+}
+#welcometext {
+    float: left;
+    margin: 0px 0px 0px 20px;
+}
+#navigasi {
+    float: right;
+    font-size: 1.2em;
+
+}
+.navitem {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+.navitem a {
+    padding: 27px;
+    display: block;
+    text-decoration: none;
+    color: #EEEEEE;
+
+}
+.navitem a:hover {
+    background-color: wheat;
+}
+#clear {
+    clear: both;
+}
+
+/* Bagian main konten */
+
+#openingkonten {
+    background-color: #51C4D3;
+    font-size: 17px;
+}
+marquee {
+    margin: 0px 35%;
+    padding: 10px;
+}
+#flexcontainer {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+}
+.bitcoin {
+    background-color: #FFB228;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    color: #0E0220;
+}
+.bitcoin img {
+    padding: 75px;
+}
+.welcomecontent {
+    background-color: #eeeeee56;
+    padding: 10px;
+    border-radius: 5px;
+}
+.itembtc {
+    background-color: #eeeeee58;
+    padding: 20px;
+    border-radius: 10px;
+}
+.ethereum {
+    background-color: #688495;
+    padding: 15px;
+    margin: 20px 20px 20px 0;
+    border-radius: 10px;
+    
+}
+.ethereum img {
+    width: 100px;
+    margin-left: 33%;
+    padding: 40px;
+}
+.itemeth {
+    background-color: #eeeeee47;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* aside css */
+.coveraside {
+    background-color: #dddddd5c;
+    border-radius: 10px;
+    margin: 20px 20px 20px 0;
+    height: 50%;
+}
+.coveraside img {
+    transform: translateY(-25%);
+    z-index: 2;
+}
+.coveraside p {
+    padding: 12px;
+    text-align: center;
+}
+#asideheader h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+/* footer css */
+footer {
+    background-color: #30475E;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+footer p {
+    padding: 10px;
+}
+
+@media screen and (max-device-width: 320px) {
+    #flexcontainer {
+        flex-direction: column;
+    }
+    #topheader {
+        display: block;
+    }
+    #welcometext {
+        margin: 0;
+        text-align: center;
+        font-size: 10px;
+    }
+}
