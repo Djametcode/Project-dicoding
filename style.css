@@ -133,27 +133,22 @@ footer p {
 @media screen and (max-device-width: 412px) {
     #flexcontainer {
         flex-direction: column;
-        width: 100%;
-    }
-    #navigasi {
-        display: inline-block;
-        position: sticky;
-        top: 0;
-    }
-    #navigasi li {
-        margin: 0;
-        padding: 0;
+        overflow: hidden;
     }
     #welcometext {
         text-align: center;
         font-size: 1.5em;
+        transform: translateX(15%);
     }
     .bitcoin img {
-        transform: translateX(-13%);
+        transform: translateX(-15%);
         width: 300px;
     }
     .ethereum {
         margin-left: 20px;
+    }
+    .ethereum img {
+        transform: translateX(-15%);
     }
     .coveraside {
         margin: 20px;
