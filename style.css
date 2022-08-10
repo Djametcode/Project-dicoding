@@ -2,6 +2,45 @@ body {
     margin: 0;
     background-color: #323232;
 }
+
+/* new nav */
+#newNav {
+    background-color: #323232;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    overflow: hidden;
+    z-index: 3;
+    transition: 0.3s;
+    height: 100%;
+}
+#newNav a {
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    color: white;
+    margin: 30px 0px 0px;
+    padding: 15px 0px 15px 35px;
+    text-align: left;
+}
+.hamburgermenu {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.closeIcon {
+    font-size: 40px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+.closeIcon:hover {
+    background-color: #688495;
+}
+
 /* Bagian header */
 
 * {
@@ -17,28 +56,6 @@ body {
 #welcometext {
     float: left;
     margin: 0px 0px 0px 20px;
-}
-#navigasi {
-    float: right;
-    font-size: 1.2em;
-
-}
-.navitem {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-}
-.navitem a {
-    padding: 27px;
-    display: block;
-    text-decoration: none;
-    color: #EEEEEE;
-
-}
-.navitem a:hover {
-    background-color: wheat;
 }
 #clear {
     clear: both;
@@ -126,9 +143,6 @@ footer {
 footer p {
     padding: 10px;
 }
-#responsivenav {
-    
-}
 
 @media screen and (max-device-width: 412px) {
     #flexcontainer {
@@ -154,3 +168,10 @@ footer p {
         margin: 20px;
         display: none;
     }
+    .hamburgermenu {
+        left: 5px;
+        top: 0px;
+        margin: 0;
+
+    }
+}
