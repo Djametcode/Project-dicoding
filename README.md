@@ -1,2 +1,0 @@
-# Project-dicoding
-hello world
